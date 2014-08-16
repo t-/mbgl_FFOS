@@ -1,12 +1,11 @@
 <ion-view title="MAP">
-  <ion-content id="nmap" class="has-header padding">
+  <ion-content class="has-header padding">
     <div class="row">
-     <button ng-click="myData.doClick()" class="button button-full button-positive">
-      show map
-     </button>
+      <button ng-click="drawMap()" class="button button-full button-positive">RENDER</button>
     </div>
+
     <div class="row">
-      <div id="mymap"></div>     
+      <div id="mymap" ng-style="mapElementStyle"></div>       
     </div>
   </ion-content>
 </ion-view>
